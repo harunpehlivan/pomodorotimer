@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Pacifico|Roboto:400,100,300,500,700,900");
+body {
+  height: 300px;
+  font-family: Roboto, sans-serif;
+  background: #03a9f4;
+}
+span.fill {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: #c62828;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+h1 img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 10px;
+}
+h1 span.pom {
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #c62828;
+}
+h1 span.fcc {
+  font-family: Pacifico;
+  display: block;
+}
+#pomodoro {
+  text-align: center;
+}
+#pomodoro .buttons {
+  margin: 0 auto;
+  color: #fff;
+}
+#pomodoro .buttons.disabled * {
+  color: #5e7580;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#pomodoro .buttons p {
+  font-family: Roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 60px 0 0;
+  padding: 0;
+}
+#pomodoro .buttons .inp {
+  width: 220px;
+}
+#pomodoro .buttons .inp button,
+#pomodoro .buttons .inp input {
+  background: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+#pomodoro .buttons .inp button {
+  width: 40px;
+  font-size: 30px;
+}
+#pomodoro .buttons .inp input {
+  width: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+#pomodoro .buttons .break-length,
+#pomodoro .buttons .work-length {
+  width: 220px;
+  display: inline-block;
+}
+#pomodoro .pomodoro-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  border-radius: 50%;
+  border: 1px solid #c62828;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+#pomodoro .pomodoro-wrap p {
+  font-size: 55px;
+  margin-bottom: 0;
+  margin-top: 90px;
+  font-family: 'Oleo Script', cursive;
+  text-transform: uppercase;
+}
+#pomodoro .pomodoro-wrap i {
+  font-size: 55px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#pomodoro .pomodoro-wrap i:hover,
+#pomodoro .pomodoro-wrap i:focus,
+#pomodoro .pomodoro-wrap i.active {
+  color: #c62828;
+}
+#pomodoro .pomodoro-wrap div {
+  font-size: 60px;
+  margin-top: 10px;
+}
